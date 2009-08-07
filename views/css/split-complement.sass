@@ -1,0 +1,21 @@
+@import compass/utilities.sass
+@import mixins.sass
+// We can change the theme color here by pre-setting the !base_color
+!base_color = base_color()
+@import split_complement_theme.sass
+
+.demo
+  :margin 0
+  :height 100%
+  .base, .complement-support, .complement-accent
+    +clearfix
+    :height 33%
+    div
+      :height 100%
+      :padding 4px 0.5%
+  .base
+    +gradient(!base_color, "base")
+  .complement-support
+    +gradient(!complement_support_color, "complement_support")
+  .complement-accent
+    +gradient(!complement_accent_color, "complement_accent")

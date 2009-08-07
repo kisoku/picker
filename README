@@ -1,0 +1,2 @@
+Picker is a small sinatra app that allows you to view color palettes generated
+by Chris Eppstein's compass-colors plugin dynamically.

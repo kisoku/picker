@@ -1,0 +1,29 @@
+!!!
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/screen.css"}
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/farbtastic.css"}
+    %title
+      \:picker
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+
+  %body
+    .container
+      .prepend-1.span-23
+        .header
+          .logo
+            %h1
+              %a{ :href => "/" }
+                \:picker
+            %p
+              by
+              %a{ :href => "http://github.com/kisoku"}
+                kisoku
+           
+      .content
+        ~ yield
+
+      .footer
+        %script{ :type => 'text/javascript', :src => '/js/jquery.js' }
+        %script{ :type => 'text/javascript', :src => '/js/farbtastic.js' }
+        %script{ :type => 'text/javascript', :src => '/js/picker.js' }

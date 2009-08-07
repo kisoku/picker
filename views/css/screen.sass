@@ -1,0 +1,78 @@
+@import compass/reset.sass
+@import compass/utilities.sass
+
+@import base.sass
+
+@import blueprint/screen.sass
+
++blueprint-typography
++blueprint-utilities
++blueprint-grid
++blueprint-debug("/img/grid.png")
+
+@import colors.sass
+@import rounded.sass
+
+body
+  :background-color = !lighter_base_color
+  :text-align justify
+  :text-justify inter-word
+
+.container
+  :margin-top 20px
+  :margin-bottom 20px
+  :background-color = !lightest_base_color
+  :border = 2px "solid" !darker_accent_color
+  +rounded(5px)
+
+.logo
+  img
+    :float left
+    :padding 0
+    :margin 0
+
+  h1
+    :color !darkest_accent_color
+    :font-size 36pt
+    :font-weight bold
+    :height 160px
+    :letter-spacing -2px
+    :margin 0
+    :padding 15px 0 0 0 
+    :text-transform lowercase
+    a
+      :color !darkest_accent_color
+
+  p
+    :color = !darkest_accent_color
+    :font-family Tahoma,Arial,Helvetica,sans-serif
+    :font-weight bold
+    :margin -9.25em 0 1.5em 2.25em
+    :text-transform uppercase
+    :line-height 1px
+
+  a
+    :font-weight bold
+    :font-style italic
+    :text-decoration none
+    :color = !light_accent_color
+
+.content
+  :padding-top 25px
+  :padding-bottom 25px
+  p
+    :font-size 14pt
+    :line-height 21px
+
+.footer
+  :padding-top 25px
+  p
+    :font-style italic
+    :font-weight bold
+    :text-align center
+  a
+    :text-decoration none
+    :color = !light_accent_color
+  hr
+    :width 2px
+    :color = !darker_accent_color
